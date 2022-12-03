@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import "./NavBar.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
@@ -28,66 +28,73 @@ const reducer = (state, action) => {
 
 const Nav = () => {
   const [state, dispatch] = useReducer(reducer, "Home");
+  const [nav, setNav] = useState("");
 
   const onClickHandlerHome = () => {
     dispatch({ type: "Home" });
+    setNav("home");
   };
   const onClickHandlerAbout = () => {
     dispatch({ type: "About" });
+    setNav("about");
   };
   const onClickHandlerContact = () => {
     dispatch({ type: "Contact" });
+    setNav("contact");
   };
   const onClickHandlerServices = () => {
     dispatch({ type: "Services" });
+    setNav("services");
   };
   const onClickHandlerExperience = () => {
     dispatch({ type: "Experience" });
+    setNav("experience");
   };
   const onClickHandlerProject = () => {
     dispatch({ type: "Project" });
+    setNav("project");
   };
 
   return (
     <>
       <nav>
         <a
-          href="#"
+          href={`#${nav}`}
           className={state.type === "Home" ? "active" : ""}
           onClick={onClickHandlerHome}
         >
           {<AiOutlineHome />}
         </a>
         <a
-          href="#about"
+          href={`#${nav}`}
           className={state.type === "About" ? "active" : ""}
           onClick={onClickHandlerAbout}
         >
           <BiUser />
         </a>
         <a
-          href="#contact"
+          href={`#${nav}`}
           className={state.type === "Contact" ? "active" : ""}
           onClick={onClickHandlerContact}
         >
           <RiContactsBookLine />
         </a>
         <a
-          href="#services"
+          href={`#${nav}`}
           className={state.type === "Services" ? "active" : ""}
           onClick={onClickHandlerServices}
         >
           <RiServiceLine />
         </a>
         <a
-          href="#experience"
+          href={`#${nav}`}
           className={state.type === "Experience" ? "active" : ""}
           onClick={onClickHandlerExperience}
         >
           <MdFeedback />
         </a>
         <a
-          href="#project"
+          href={`#${nav}`}
           className={state.type === "Project" ? "active" : ""}
           onClick={onClickHandlerProject}
         >

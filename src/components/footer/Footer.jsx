@@ -6,59 +6,59 @@ import "./Footer.css";
 const Footer = () => {
   const [footer, setFooter] = useState("");
   const onClickHomeHandler = () => {
-    setFooter("Home");
+    setFooter("home");
   };
   const onClickAboutHandler = () => {
-    setFooter("About");
+    setFooter("about");
   };
   const onClickContactHandler = () => {
-    setFooter("Contact");
+    setFooter("contact");
   };
   const onClickServicesHandler = () => {
-    setFooter("Services");
+    setFooter("services");
   };
   const onClickExperienceHandler = () => {
-    setFooter("Experience");
+    setFooter("experience");
   };
   const onClickProjectHandler = () => {
-    setFooter("Project");
+    setFooter("project");
   };
 
   return (
     <>
       <footer>
-        <a href={footer} className="footer__logo">
+        <a href={`#${footer}`} className="footer__logo">
           Nikhil Ranjan Kumar
         </a>
 
         <ul className="permalinks">
           <li>
-            <a href={footer} onClick={onClickHomeHandler}>
+            <a href={`#${footer}`} onClick={onClickHomeHandler}>
               Home
             </a>
           </li>
           <li>
-            <a href={footer} onClick={onClickAboutHandler}>
+            <a href={`#${footer}`} onClick={onClickAboutHandler}>
               About
             </a>
           </li>
           <li>
-            <a href={footer} onClick={onClickExperienceHandler}>
+            <a href={`#${footer}`} onClick={onClickExperienceHandler}>
               Experience
             </a>
           </li>
           <li>
-            <a href={footer} onClick={onClickServicesHandler}>
+            <a href={`#${footer}`} onClick={onClickServicesHandler}>
               Services
             </a>
           </li>
           <li>
-            <a href={footer} onClick={onClickProjectHandler}>
+            <a href={`#${footer}`} onClick={onClickProjectHandler}>
               Projects
             </a>
           </li>
           <li>
-            <a href={footer} onClick={onClickContactHandler}>
+            <a href={`#${footer}`} onClick={onClickContactHandler}>
               Contact
             </a>
           </li>

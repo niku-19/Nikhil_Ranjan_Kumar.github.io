@@ -1,47 +1,88 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import "./Footer.css";
 const Footer = () => {
+  const [footer, setFooter] = useState("");
+  const onClickHomeHandler = () => {
+    setFooter("Home");
+  };
+  const onClickAboutHandler = () => {
+    setFooter("About");
+  };
+  const onClickContactHandler = () => {
+    setFooter("Contact");
+  };
+  const onClickServicesHandler = () => {
+    setFooter("Services");
+  };
+  const onClickExperienceHandler = () => {
+    setFooter("Experience");
+  };
+  const onClickProjectHandler = () => {
+    setFooter("Project");
+  };
+
   return (
     <>
       <footer>
-        <a href="#" className="footer__logo">
+        <a href={footer} className="footer__logo">
           Nikhil Ranjan Kumar
         </a>
 
         <ul className="permalinks">
           <li>
-            <a href="#"> Home </a>
+            <a href={footer} onClick={onClickHomeHandler}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about"> About </a>
+            <a href={footer} onClick={onClickAboutHandler}>
+              About
+            </a>
           </li>
           <li>
-            <a href="#experience"> Experience </a>
+            <a href={footer} onClick={onClickExperienceHandler}>
+              Experience
+            </a>
           </li>
           <li>
-            <a href="#services"> Services </a>
+            <a href={footer} onClick={onClickServicesHandler}>
+              Services
+            </a>
           </li>
           <li>
-            <a href="#project"> Projects </a>
+            <a href={footer} onClick={onClickProjectHandler}>
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#contact"> Contact </a>
+            <a href={footer} onClick={onClickContactHandler}>
+              Contact
+            </a>
           </li>
         </ul>
         <div className="footer__social">
-          <a href="https://github.com/niku-19" target="_blank">
+          <a
+            href="https://github.com/niku-19"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {<FaGithub />}
           </a>
           <a
             href="https://www.linkedin.com/in/nikhil-ranjan-kumar-594856193/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             {<BsLinkedin />}
           </a>
-          <a href="https://www.instagram.com/14_nikhil_kumar/" target="_blank">
+          <a
+            href="https://www.instagram.com/14_nikhil_kumar/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {<FaInstagram />}
           </a>
         </div>

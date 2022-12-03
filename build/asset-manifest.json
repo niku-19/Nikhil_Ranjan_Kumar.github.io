@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d247fc13.css",
+    "main.js": "/static/js/main.4588814b.js",
+    "static/media/NRK.png": "/static/media/NRK.d881368c98cc7cd14c56.png",
+    "static/media/me-1.png": "/static/media/me-1.95da96f6ede5aa317ebf.png",
+    "static/media/portfolio5.png": "/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
+    "static/media/portfolio2.jpg": "/static/media/portfolio2.ae187bc4e43ae6dbc263.jpg",
+    "static/media/portfolio6.jpg": "/static/media/portfolio6.72d1107e313049cf15a7.jpg",
+    "static/media/Niku-Resume.pdf": "/static/media/Niku-Resume.3c4ed0179334e7c6429e.pdf",
+    "static/media/portfolio1.jpg": "/static/media/portfolio1.f5e72352e5aa840702b8.jpg",
+    "static/media/portfolio3.jpg": "/static/media/portfolio3.cbab42559fe73e73906f.jpg",
+    "static/media/portfolio4.jpg": "/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
+    "index.html": "/index.html",
+    "main.d247fc13.css.map": "/static/css/main.d247fc13.css.map",
+    "main.4588814b.js.map": "/static/js/main.4588814b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d247fc13.css",
+    "static/js/main.4588814b.js"
+  ]
+}

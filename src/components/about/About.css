@@ -1,0 +1,114 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15rem;
+}
+
+.about__brand-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about__brand__image-me {
+  border-radius: 2rem;
+  overflow: heidden;
+  transform: rotate(15deg);
+  transition: var(--transition);
+}
+
+.about__brand__image-me:hover {
+  transform: rotate(0deg);
+  border: 2px solid var(--color-bg);
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.about__card {
+  border: 1px slolid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--color-bg-variant);
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  background: transparent;
+  border: 1px solid var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__icons {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about__card h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.about__card small {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-light);
+}
+
+.about__content p {
+  margin: 2rem 0rem 3rem 0rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 1024px) {
+  #about h1 {
+    margin-bottom: 3rem;
+  }
+  .about__container {
+    height: 68vh;
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+  .about__brand-image {
+    width: 50%;
+    margin: 2rem auto 4rem auto;
+  }
+  .about__content p {
+    margin: 2rem 0rem 3rem 0rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-light);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about__container {
+    height: 100vh;
+  }
+  .about__brand-image {
+    width: 70%;
+    margin: 0 auto 4rem auto;
+  }
+  .about__content p {
+    margin: 2rem 0rem 3rem 0rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-light);
+    text-align: center;
+  }
+}

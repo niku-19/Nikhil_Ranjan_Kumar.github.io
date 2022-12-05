@@ -97,7 +97,10 @@
 }
 @media screen and (max-width: 600px) {
   .about__container {
-    height: 100vh;
+    height: auto;
+  }
+  .about__content {
+    height: auto;
   }
   .about__brand-image {
     width: 70%;
@@ -112,6 +115,12 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .about__container {
+    height: auto;
+  }
+  .about__content {
+    height: auto;
+  }
   .about__cards {
     grid-template-columns: 1fr;
     gap: 2rem;

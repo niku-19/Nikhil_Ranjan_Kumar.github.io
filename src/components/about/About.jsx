@@ -53,7 +53,6 @@ const About = () => {
               more problems to solve, and yet more to build. And for this, I'm
               very grateful.
             </p>
-
             <a href="#contact" className="btn btn-primary align__btn">
               Let's Talk
             </a>

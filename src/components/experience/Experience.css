@@ -29,48 +29,23 @@
   gap: 2rem;
 }
 @media screen and (max-width: 1024px) {
-  .experience__container {
-    height: auto;
-  }
   #experience {
     margin-top: 35rem;
   }
 }
 @media screen and (max-width: 900px) {
-  .experience__container {
-    height: auto;
-  }
   #experience {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 }
 @media screen and (max-width: 600px) {
-  .experience__container {
-    height: auto;
-  }
   #experience {
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
   .experience__content {
     grid-template-columns: 1fr;
   }
   .experience__container > div h3 {
     font-size: 2rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .experience__container {
-    height: auto;
-  }
-  #experience {
-    margin-top: 15rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .experience__container {
-    height: auto;
-  }
-  #experience {
-    margin-top: 19rem;
   }
 }

@@ -13,7 +13,12 @@ const ProjectCard = () => {
               </div>
               <h3>{datas.title}</h3>
               <div className="portfolio__itmes-cta">
-                <a href={datas.link} className="btn">
+                <a
+                  href={datas.link}
+                  className="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GithUb
                 </a>
               </div>

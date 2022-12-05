@@ -1,16 +1,16 @@
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG1 from "../../assets/p1.png";
+import IMG2 from "../../assets/p2.png";
+import IMG3 from "../../assets/p3.png";
+import IMG4 from "../../assets/p4.png";
+import IMG5 from "../../assets/p5.png";
+// import IMG6 from "../../assets/p.png";
 
 const ProjectsData = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Portfolio",
     image: IMG1,
-    link: "",
+    link: "https://github.com/niku-19/Nikhil_Ranjan_Kumar.github.io.git",
   },
   {
     id: 2,
@@ -36,12 +36,12 @@ const ProjectsData = [
     image: IMG5,
     link: "",
   },
-  {
-    id: 6,
-    title: "Project 6",
-    image: IMG6,
-    link: "",
-  },
+  // {
+  //   id: 6,
+  //   title: "Project 6",
+  //   image: IMG6,
+  //   link: "",
+  // },
 ];
 
 export default ProjectsData;

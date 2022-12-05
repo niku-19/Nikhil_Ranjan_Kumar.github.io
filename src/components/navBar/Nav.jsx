@@ -56,7 +56,7 @@ const Nav = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <nav>
         <a
           href={`#${nav}`}
@@ -101,7 +101,7 @@ const Nav = () => {
           <AiOutlineProject />
         </a>
       </nav>
-    </>
+    </div>
   );
 };
 

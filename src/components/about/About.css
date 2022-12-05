@@ -80,7 +80,6 @@
     margin-bottom: 3rem;
   }
   .about__container {
-    height: 68vh;
     grid-template-columns: 1fr;
     gap: 0rem;
   }
@@ -107,6 +106,23 @@
   .about__content p {
     margin: 2rem 0rem 3rem 0rem;
     font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-light);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about__cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about__brand-image {
+    width: 80%;
+    margin: 0 auto 4rem auto;
+  }
+  .about__content p {
+    margin: 2rem 0rem 3rem 0rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--color-light);
     text-align: center;

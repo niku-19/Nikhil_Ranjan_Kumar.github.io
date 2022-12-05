@@ -25,11 +25,11 @@ const About = () => {
               <article className="about__card">
                 <FaAward className="about__icons" />
                 <h5>Web Development</h5>
-                <small> 1+ year learing</small>
+                <small> 1+ year learning</small>
               </article>
               <article className="about__card">
                 <BsFolderCheck className="about__icons" />
-                <h5>Projects</h5>
+                <h5>Project</h5>
                 <small> 10+ complete Projects</small>
               </article>
             </div>
@@ -54,8 +54,8 @@ const About = () => {
               very grateful.
             </p>
 
-            <a href="#contact" className="btn btn-primary">
-              Let's Talk{" "}
+            <a href="#contact" className="btn btn-primary align__btn">
+              Let's Talk
             </a>
           </div>
         </div>

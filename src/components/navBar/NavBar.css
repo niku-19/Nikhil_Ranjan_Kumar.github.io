@@ -40,13 +40,9 @@ nav a.active {
 @media screen and (max-width: 400px) {
   nav {
     width: 95%;
-    /* left: 0;
-    transform: translateX(0); */
     margin: 0 auto;
     display: flex;
     gap: 0.1rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(1.5rem);
   }
   nav a {
     display: flex;

@@ -1,7 +1,9 @@
 .experience__details {
   display: flex;
-  gap: 1rem;
+  justify-content: space-evenly;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: anywhere;
 }
 
 .experience__details h4 {
@@ -9,8 +11,18 @@
 }
 
 .experience__details-icons {
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   color: var(--color-primary);
+}
+
+.experience__details__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: whitesmoke;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .skill__bar {
@@ -26,9 +38,10 @@
   justify-content: center;
   height: 100%;
   opacity: 1;
-  background: green;
   border-radius: 0.5rem;
 }
+
+
 @media screen and (max-width: 900px) {
   .skill__bar {
     display: none;

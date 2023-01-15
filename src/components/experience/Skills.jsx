@@ -1,6 +1,5 @@
 import React from "react";
 import SkillData from "../Data/Data";
-import { BsPatchCheckFill } from "react-icons/bs";
 import "../experience/Skills.css";
 
 const Skills = () => {
@@ -12,18 +11,18 @@ const Skills = () => {
     <>
       {SkillData.map((datas) => {
         return (
-          <div key={datas.id}>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
+          <article key={datas.id} className="experience__details">
+            <div className="experience__details__title">
+              <datas.icons className="experience__details-icons" style={{color : `${datas.color}`}} />
               <h4>{datas.title}</h4>
-              <div className="skill__bar">
-                <div
-                  className="skill__bar-fill"
-                  style={{ width: `${datas.percentage}%` }}
-                ></div>
-              </div>
-            </article>
-          </div>
+            </div>
+            <div className="skill__bar">
+              <div
+                className="skill__bar-fill"
+                style={{ width: `${datas.percentage}%` , backgroundColor: `${datas.color}` }}
+              ></div>
+            </div>
+          </article>
         );
       })}
     </>

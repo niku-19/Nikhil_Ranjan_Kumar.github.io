@@ -12,27 +12,39 @@ const ServicesCard = (props) => {
         <ul className="service__list">
           <li>
             <BiCheck className="services__list-icons" />
-            <p>Knowledge of design principles.</p>
+            <p>Site purpose.</p>
           </li>
           <li>
             <BiCheck className="services__list-icons" />
-            <p>User experience (UX) knowledge.</p>
+            <p>Target audiences.</p>
           </li>
           <li>
             <BiCheck className="services__list-icons" />
-            <p>User interface (UI) knowledge.</p>
+            <p>Site objectives.</p>
           </li>
           <li>
             <BiCheck className="services__list-icons" />
-            <p>Search engine optimisation (SEO) knowledge.</p>
+            <p>Responsive, mobile-friendly design.</p>
           </li>
           <li>
             <BiCheck className="services__list-icons" />
-            <p>Proficiency in design software.</p>
+            <p>Fresh content.</p>
           </li>
           <li>
             <BiCheck className="services__list-icons" />
-            <p>Knowledge of colour theory.</p>
+            <p>Engaging content.</p>
+          </li>
+          <li>
+            <BiCheck className="services__list-icons" />
+            <p>Site maintenance.</p>
+          </li>
+          <li>
+            <BiCheck className="services__list-icons" />
+            <p>Features.</p>
+          </li>
+          <li>
+            <BiCheck className="services__list-icons" />
+            <p>Accessibility.</p>
           </li>
         </ul>
       </article>

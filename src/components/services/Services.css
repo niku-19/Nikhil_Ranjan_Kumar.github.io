@@ -34,12 +34,23 @@
   padding: 2rem;
 }
 
-.services__list li {
+.service__list li {
   display: flex;
-  gap: 1rem;
+  justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
+}
+
+.service__list li:not(:last-child) {
   margin-bottom: 1rem;
 }
+
+.service__list li p {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
 
 .services__list-icons {
   color: var(--color-primary);

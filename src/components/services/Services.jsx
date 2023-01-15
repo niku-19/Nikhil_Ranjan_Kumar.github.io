@@ -1,5 +1,7 @@
 import React from "react";
-import ServicesCard from "./ServicesCard";
+import ServicesCardWebDesign from "./ServicesCard";
+import ServicesCardResponsibe from "./ServicesCardResponsibe";
+import ServicesCardDevelopment from "./ServicesCardDevelopment";
 import "./Services.css";
 
 const Services = () => {
@@ -9,9 +11,9 @@ const Services = () => {
         <h5>What I Can Do</h5>
         <h1>Services</h1>
         <div className="container services__container">
-          <ServicesCard Title={"Web Design"} />
-          <ServicesCard Title={"Responsibe Design"} />
-          <ServicesCard Title={"Development"} />
+          <ServicesCardWebDesign Title={"Web Design"} />
+          <ServicesCardResponsibe Title={"Responsibe Design"} />
+          <ServicesCardDevelopment Title={"Development"} />
         </div>
       </section>
     </>

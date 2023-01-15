@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../../assets/Niku-Resume.pdf";
+import Resume from "../../assets/niku-1.pdf";
 const CTA = () => {
   return (
     <>

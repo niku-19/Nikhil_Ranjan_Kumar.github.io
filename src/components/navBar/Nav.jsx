@@ -1,4 +1,5 @@
 import React, { useReducer, useState } from "react";
+import { motion } from "framer-motion";
 import "./NavBar.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
@@ -56,7 +57,35 @@ const Nav = () => {
   };
 
   return (
-    <div className="container">
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: -500,
+        scale: 2,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: {
+          duration: 1,
+          delay: 1.5,
+          type: "spring",
+          stiffness: 120,
+        },
+      }}
+      exit={{
+        opacity: 0,
+        y: -500,
+        scale: 2,
+        transition: {
+          duration: 1,
+          delay: 1.5,
+          type: "spring",
+          stiffness: 120,
+        },
+      }} 
+     className="container">
       <nav>
         <a
           href={`#${nav}`}
@@ -101,7 +130,7 @@ const Nav = () => {
           <AiOutlineProject />
         </a>
       </nav>
-    </div>
+    </motion.div>
   );
 };
 

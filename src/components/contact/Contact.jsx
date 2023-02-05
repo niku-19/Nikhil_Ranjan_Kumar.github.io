@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
@@ -31,12 +32,45 @@ const Contact = () => {
 
   return (
     <>
-      <section id="contact">
+      <motion.section
+        initial={{
+          opacity: 0,
+          y: -200,
+          scale: 0.5,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: {
+            duration: 1.5,
+            type: "spring",
+            delay: 0.2,
+          },
+        }}
+        id="contact"
+      >
         <h5>Get In Touch</h5>
         <h1>Contact Me</h1>
         <div className="container contact__container">
           <div className="contact__options">
-            <article className="contact__option">
+            <motion.article
+              initial={{
+                opacity: 0,
+                x: -200,
+                scale: 0.5,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                transition: {
+                  duration: 1.5,
+                  type: "spring",
+                },
+              }}
+              className="contact__option"
+            >
               <MdOutlineEmail className="contact__option-icon" />
               <h4>Email</h4>
               <h5>nikhilranjankumar1999@gmail.com</h5>
@@ -47,8 +81,25 @@ const Contact = () => {
               >
                 Send a Message
               </a>
-            </article>
-            <article className="contact__option">
+            </motion.article>
+            <motion.article
+              initial={{
+                opacity: 0,
+                x: -200,
+                scale: 0.5,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                transition: {
+                  duration: 1.5,
+                  delay: 0.2,
+                  type: "spring",
+                },
+              }}
+              className="contact__option"
+            >
               <BsInstagram className="contact__option-icon" />
               <h4>Instagram</h4>
               <h5>14_nikhil_kumar</h5>
@@ -59,8 +110,25 @@ const Contact = () => {
               >
                 Send a Message
               </a>
-            </article>
-            <article className="contact__option">
+            </motion.article>
+            <motion.article
+              initial={{
+                opacity: 0,
+                x: -200,
+                scale: 0.5,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                transition: {
+                  duration: 1.5,
+                  delay: 0.2,
+                  type: "spring",
+                },
+              }}
+              className="contact__option"
+            >
               <BsWhatsapp className="contact__option-icon" />
               <h4>Whatsapp</h4>
               <h5>+91-6205666646</h5>
@@ -71,17 +139,65 @@ const Contact = () => {
               >
                 Send a Message
               </a>
-            </article>
+            </motion.article>
           </div>
           <form ref={form} onSubmit={sendEmail}>
-            <input
+            <motion.input
+              initial={{
+                opacity: 0,
+                x: 200,
+                scale: 0.5,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                transition: {
+                  duration: 1.5,
+                  type: "spring",
+                },
+              }}
               type="text"
               name="forName"
               placeholder="Your Good Name"
               required
             />
-            <input type="text" name="Email" placeholder="Your Email" required />
-            <textarea
+            <motion.input
+              initial={{
+                opacity: 0,
+                x: 200,
+                scale: 0.5,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                transition: {
+                  duration: 1.5,
+                  type: "spring",
+                },
+              }}
+              type="text"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <motion.textarea
+              initial={{
+                opacity: 0,
+                x: 200,
+                scale: 0.5,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                transition: {
+                  duration: 1.5,
+                  delay: 0.2,
+                  type: "spring",
+                },
+              }}
               name="message"
               rows="10"
               placeholder="Enter Your Message Here ✔️"
@@ -89,7 +205,7 @@ const Contact = () => {
             <button className="btn btn-primary">Send Message</button>
           </form>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

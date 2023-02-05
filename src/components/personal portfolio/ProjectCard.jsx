@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import ProjectDatas from "../Data/ProjectsData";
 
 const ProjectCard = () => {
@@ -6,7 +7,24 @@ const ProjectCard = () => {
     <>
       {ProjectDatas.map((datas) => {
         return (
-          <div key={datas.id}>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: -200,
+              scale: 0.5,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: {
+                duration: 1.5,
+                delay: datas.delay,
+                type: "spring",
+              },
+            }}
+            viewport={{once: true}}
+          key={datas.id}>
             <article className="portfolio__items">
               <div className="portfolio__items-image">
                 <img src={datas.image} alt="" />
@@ -23,7 +41,7 @@ const ProjectCard = () => {
                 </a>
               </div>
             </article>
-          </div>
+          </motion.div>
         );
       })}
     </>

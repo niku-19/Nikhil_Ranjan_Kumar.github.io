@@ -9,7 +9,9 @@ header {
   height: 100%;
   position: relative;
 }
-
+.text {
+  font-size: 2rem;
+}
 .cta {
   margin-top: 2.5rem;
   display: flex;

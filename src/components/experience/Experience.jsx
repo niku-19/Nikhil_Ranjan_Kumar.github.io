@@ -1,11 +1,24 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Experience.css";
 import Skills from "./Skills";
 
 const Experience = () => {
   return (
     <>
-      <section id="experience">
+      <motion.section
+        initial={{
+          opacity: 0,
+          scale: 0.5,
+        }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          transition: {
+            duration: 1.5,
+          }
+        }}
+       id="experience">
         <h5>What Skill I Have</h5>
         <h1>My Experience</h1>
         <div className="container experience__container">
@@ -16,7 +29,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

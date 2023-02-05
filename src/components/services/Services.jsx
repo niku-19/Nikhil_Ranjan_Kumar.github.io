@@ -15,7 +15,7 @@ const Services = () => {
           <motion.div
            initial={{
           opacity: 0,
-          x: -200,
+          x: -100,
           scale: 0.5,
         }}
         whileInView={{
@@ -24,17 +24,6 @@ const Services = () => {
           scale: 1,
           transition: {
             duration: 1.5,
-            type: "spring",
-          },
-        }}
-        exit={{
-          opacity: 0,
-          x: -500,
-          scale: 2,
-          transition: {
-            duration: 1,
-            type: "spring",
-            stiffness: 120,
           },
         }}
           >
@@ -43,7 +32,7 @@ const Services = () => {
           <motion.div
            initial={{
           opacity: 0,
-          x: 200,
+          x: 100,
           scale: 0.5,
         }}
         whileInView={{
@@ -52,17 +41,6 @@ const Services = () => {
           scale: 1,
           transition: {
             duration: 1.5,
-            type: "spring",
-          },
-        }}
-        exit={{
-          opacity: 0,
-          x: 500,
-          scale: 2,
-          transition: {
-            duration: 1,
-            type: "spring",
-            stiffness: 120,
           },
         }}
           >
@@ -71,7 +49,7 @@ const Services = () => {
           <motion.div
            initial={{
           opacity: 0,
-          x: -200,
+          x: -100,
           scale: 0.5,
         }}
         whileInView={{
@@ -80,17 +58,6 @@ const Services = () => {
           scale: 1,
           transition: {
             duration: 1.5,
-            type: "spring",
-          },
-        }}
-        exit={{
-          opacity: 0,
-          y: -500,
-          scale: 2,
-          transition: {
-            duration: 1,
-            type: "spring",
-            stiffness: 120,
           },
         }}
           >

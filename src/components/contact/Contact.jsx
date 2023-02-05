@@ -35,7 +35,7 @@ const Contact = () => {
       <motion.section
         initial={{
           opacity: 0,
-          y: -200,
+          y: -100,
           scale: 0.5,
         }}
         whileInView={{
@@ -43,9 +43,7 @@ const Contact = () => {
           y: 0,
           scale: 1,
           transition: {
-            duration: 1.5,
-            type: "spring",
-            delay: 0.2,
+            duration: 1,
           },
         }}
         id="contact"
@@ -57,7 +55,7 @@ const Contact = () => {
             <motion.article
               initial={{
                 opacity: 0,
-                x: -200,
+                x: -100,
                 scale: 0.5,
               }}
               whileInView={{
@@ -65,8 +63,7 @@ const Contact = () => {
                 x: 0,
                 scale: 1,
                 transition: {
-                  duration: 1.5,
-                  type: "spring",
+                  duration: 1,
                 },
               }}
               className="contact__option"
@@ -85,7 +82,7 @@ const Contact = () => {
             <motion.article
               initial={{
                 opacity: 0,
-                x: -200,
+                x: -100,
                 scale: 0.5,
               }}
               whileInView={{
@@ -93,9 +90,7 @@ const Contact = () => {
                 x: 0,
                 scale: 1,
                 transition: {
-                  duration: 1.5,
-                  delay: 0.2,
-                  type: "spring",
+                  duration: 1,
                 },
               }}
               className="contact__option"
@@ -114,7 +109,7 @@ const Contact = () => {
             <motion.article
               initial={{
                 opacity: 0,
-                x: -200,
+                x: -100,
                 scale: 0.5,
               }}
               whileInView={{
@@ -122,9 +117,7 @@ const Contact = () => {
                 x: 0,
                 scale: 1,
                 transition: {
-                  duration: 1.5,
-                  delay: 0.2,
-                  type: "spring",
+                  duration: 1,
                 },
               }}
               className="contact__option"
@@ -145,7 +138,7 @@ const Contact = () => {
             <motion.input
               initial={{
                 opacity: 0,
-                x: 200,
+                x: 100,
                 scale: 0.5,
               }}
               whileInView={{
@@ -153,8 +146,7 @@ const Contact = () => {
                 x: 0,
                 scale: 1,
                 transition: {
-                  duration: 1.5,
-                  type: "spring",
+                  duration: 1,
                 },
               }}
               type="text"
@@ -165,7 +157,7 @@ const Contact = () => {
             <motion.input
               initial={{
                 opacity: 0,
-                x: 200,
+                x: 100,
                 scale: 0.5,
               }}
               whileInView={{
@@ -173,8 +165,7 @@ const Contact = () => {
                 x: 0,
                 scale: 1,
                 transition: {
-                  duration: 1.5,
-                  type: "spring",
+                  duration: 1,
                 },
               }}
               type="text"
@@ -185,7 +176,7 @@ const Contact = () => {
             <motion.textarea
               initial={{
                 opacity: 0,
-                x: 200,
+                x: 100,
                 scale: 0.5,
               }}
               whileInView={{
@@ -193,9 +184,7 @@ const Contact = () => {
                 x: 0,
                 scale: 1,
                 transition: {
-                  duration: 1.5,
-                  delay: 0.2,
-                  type: "spring",
+                  duration: 1,
                 },
               }}
               name="message"

@@ -18,9 +18,8 @@ const ProjectCard = () => {
               y: 0,
               scale: 1,
               transition: {
-                duration: 1.5,
+                duration: 1,
                 delay: datas.delay,
-                type: "spring",
               },
             }}
             viewport={{once: true}}

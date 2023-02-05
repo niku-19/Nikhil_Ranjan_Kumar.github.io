@@ -19,8 +19,7 @@ const About = () => {
           x: 0,
           scale: 1,
           transition: {
-            duration: 1.5,
-            type: "spring",
+            duration: 1,
           },
         }}
         id="about"
@@ -31,7 +30,7 @@ const About = () => {
           <motion.div
           initial={{
             opacity: 0,
-            x: -200,
+            x: -100,
             scale: 0.5,
           }}
           whileInView={{
@@ -39,9 +38,7 @@ const About = () => {
             x: 0,
             scale: 1,
             transition: {
-              duration: 1.5,
-              delay: 0.5,
-              type: "spring",
+              duration: 1,
             },
           }}
            className="about__me">
@@ -53,8 +50,7 @@ const About = () => {
                 whileInView={{
                   blur : 0,
                   transition: {
-                    duration: 1.5,
-                    delay: 1.5,
+                    duration: 1,
                   }
                 }}
                 src={BrandImage}
@@ -67,7 +63,7 @@ const About = () => {
             <motion.div
             initial={{
               opacity: 0,
-              x: 200,
+              x: 100,
               scale: 0.5,
             }}
             whileInView={{
@@ -75,9 +71,7 @@ const About = () => {
               x: 0,
               scale: 1,
               transition: {
-                duration: 1.5,
-                delay: 0.7,
-                type: "spring",
+                duration: 1,
               },
             }}
              className="about__cards">
@@ -96,7 +90,7 @@ const About = () => {
             <motion.p
             initial={{
               opacity: 0,
-              x: 200,
+              x: 100,
               scale: 0.5,
             }}
             whileInView={{
@@ -104,9 +98,7 @@ const About = () => {
               x: 0,
               scale: 1,
               transition: {
-                duration: 1.5,
-                delay: 0.7,
-                type: "spring",
+                duration: 1,
               },
             }}
             >

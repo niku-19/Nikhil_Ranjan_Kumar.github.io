@@ -57,80 +57,81 @@ const Nav = () => {
   };
 
   return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        y: -500,
-        scale: 2,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        transition: {
-          duration: 1,
-          delay: 1.5,
-          type: "spring",
-          stiffness: 120,
-        },
-      }}
-      exit={{
-        opacity: 0,
-        y: -500,
-        scale: 2,
-        transition: {
-          duration: 1,
-          delay: 1.5,
-          type: "spring",
-          stiffness: 120,
-        },
-      }} 
-     className="container">
-      <nav>
-        <a
-          href={`#${nav}`}
-          className={state.type === "Home" ? "active" : ""}
-          onClick={onClickHandlerHome}
-        >
-          {<AiOutlineHome />}
-        </a>
-        <a
-          href={`#${nav}`}
-          className={state.type === "About" ? "active" : ""}
-          onClick={onClickHandlerAbout}
-        >
-          <BiUser />
-        </a>
-        <a
-          href={`#${nav}`}
-          className={state.type === "Contact" ? "active" : ""}
-          onClick={onClickHandlerContact}
-        >
-          <RiContactsBookLine />
-        </a>
-        <a
-          href={`#${nav}`}
-          className={state.type === "Services" ? "active" : ""}
-          onClick={onClickHandlerServices}
-        >
-          <RiServiceLine />
-        </a>
-        <a
-          href={`#${nav}`}
-          className={state.type === "Experience" ? "active" : ""}
-          onClick={onClickHandlerExperience}
-        >
-          <MdFeedback />
-        </a>
-        <a
-          href={`#${nav}`}
-          className={state.type === "Project" ? "active" : ""}
-          onClick={onClickHandlerProject}
-        >
-          <AiOutlineProject />
-        </a>
-      </nav>
-    </motion.div>
+    <div className="nav__container">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: -500,
+          scale: 2,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: {
+            duration: 1,
+            type: "spring",
+            stiffness: 120,
+          },
+        }}
+        exit={{
+          opacity: 0,
+          y: -500,
+          scale: 2,
+          transition: {
+            duration: 1,
+            type: "spring",
+            stiffness: 120,
+          },
+        }}
+        className="container"
+      >
+        <nav>
+          <a
+            href={`#${nav}`}
+            className={state.type === "Home" ? "active" : ""}
+            onClick={onClickHandlerHome}
+          >
+            {<AiOutlineHome />}
+          </a>
+          <a
+            href={`#${nav}`}
+            className={state.type === "About" ? "active" : ""}
+            onClick={onClickHandlerAbout}
+          >
+            <BiUser />
+          </a>
+          <a
+            href={`#${nav}`}
+            className={state.type === "Contact" ? "active" : ""}
+            onClick={onClickHandlerContact}
+          >
+            <RiContactsBookLine />
+          </a>
+          <a
+            href={`#${nav}`}
+            className={state.type === "Services" ? "active" : ""}
+            onClick={onClickHandlerServices}
+          >
+            <RiServiceLine />
+          </a>
+          <a
+            href={`#${nav}`}
+            className={state.type === "Experience" ? "active" : ""}
+            onClick={onClickHandlerExperience}
+          >
+            <MdFeedback />
+          </a>
+          <a
+            href={`#${nav}`}
+            className={state.type === "Project" ? "active" : ""}
+            onClick={onClickHandlerProject}
+          >
+            <AiOutlineProject />
+          </a>
+        </nav>
+      </motion.div>
+    </div>
   );
 };
 

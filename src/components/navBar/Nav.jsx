@@ -61,7 +61,7 @@ const Nav = () => {
       <motion.div
         initial={{
           opacity: 0,
-          y: -500,
+          y: -50,
           scale: 2,
         }}
         animate={{
@@ -70,18 +70,6 @@ const Nav = () => {
           scale: 1,
           transition: {
             duration: 1,
-            type: "spring",
-            stiffness: 120,
-          },
-        }}
-        exit={{
-          opacity: 0,
-          y: -500,
-          scale: 2,
-          transition: {
-            duration: 1,
-            type: "spring",
-            stiffness: 120,
           },
         }}
         className="container"
@@ -103,11 +91,12 @@ const Nav = () => {
           </a>
           <a
             href={`#${nav}`}
-            className={state.type === "Contact" ? "active" : ""}
-            onClick={onClickHandlerContact}
+            className={state.type === "Experience" ? "active" : ""}
+            onClick={onClickHandlerExperience}
           >
-            <RiContactsBookLine />
+            <MdFeedback />
           </a>
+
           <a
             href={`#${nav}`}
             className={state.type === "Services" ? "active" : ""}
@@ -115,19 +104,20 @@ const Nav = () => {
           >
             <RiServiceLine />
           </a>
-          <a
-            href={`#${nav}`}
-            className={state.type === "Experience" ? "active" : ""}
-            onClick={onClickHandlerExperience}
-          >
-            <MdFeedback />
-          </a>
+
           <a
             href={`#${nav}`}
             className={state.type === "Project" ? "active" : ""}
             onClick={onClickHandlerProject}
           >
             <AiOutlineProject />
+          </a>
+          <a
+            href={`#${nav}`}
+            className={state.type === "Contact" ? "active" : ""}
+            onClick={onClickHandlerContact}
+          >
+            <RiContactsBookLine />
           </a>
         </nav>
       </motion.div>

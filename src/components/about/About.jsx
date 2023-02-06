@@ -8,99 +8,98 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <motion.section
-        initial={{
-          opacity: 0,
-          x: -200,
-          scale: 0.5,
-        }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          scale: 1,
-          transition: {
-            duration: 1,
-          },
-        }}
-        id="about"
-      >
+      <section id="about">
         <h5>Get To Know</h5>
         <h1>About Me</h1>
         <div className=" container about__container">
-          <motion.div
-          initial={{
-            opacity: 0,
-            x: -100,
-            scale: 0.5,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            scale: 1,
-            transition: {
-              duration: 1,
-            },
-          }}
-           className="about__me">
-            <div className="about__brand-image">
-              <motion.img
-                initial={{
-                  blur : 100
-                }}
-                whileInView={{
-                  blur : 0,
-                  transition: {
-                    duration: 1,
-                  }
-                }}
+          <div className="about__me">
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: -200,
+                scale: 0.7,
+                blur: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                scale: 1,
+                blur: 0,
+                transition: {
+                  duration: 1.5,
+                },
+              }}
+              className="about__brand-image"
+            >
+              <img
                 src={BrandImage}
                 className="about__brand__image-me"
                 alt="AboutMe"
               />
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
           <div className="about__content">
-            <motion.div
-            initial={{
-              opacity: 0,
-              x: 100,
-              scale: 0.5,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              scale: 1,
-              transition: {
-                duration: 1,
-              },
-            }}
-             className="about__cards">
-              <article className="about__card">
+            <div className="about__cards">
+              <motion.article
+                initial={{
+                  opacity: 0,
+                  x: 200,
+                  scale: 0.1,
+                  blur: 100,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  scale: 1,
+                  blur: 0,
+                  transition: {
+                    duration: 1.5,
+                  },
+                }}
+                className="about__card"
+              >
                 <FaAward className="about__icons" />
                 <h5>Web Development</h5>
                 <small> 1+ year learning</small>
-              </article>
-              <article className="about__card">
+              </motion.article>
+              <motion.article
+                initial={{
+                  opacity: 0,
+                  x: 200,
+                  scale: 0.2,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  scale: 1,
+                  transition: {
+                    duration: 1.5,
+                  },
+                }}
+                className="about__card"
+              >
                 <BsFolderCheck className="about__icons" />
                 <h5>Project</h5>
                 <small> 10+ complete Projects</small>
-              </article>
-            </motion.div>
+              </motion.article>
+            </div>
 
             <motion.p
-            initial={{
-              opacity: 0,
-              x: 100,
-              scale: 0.5,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              scale: 1,
-              transition: {
-                duration: 1,
-              },
-            }}
+              initial={{
+                opacity: 0,
+                y: 300,
+                scale: 0.7,
+                blur: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                blur: 0,
+                transition: {
+                  duration: 1.5,
+                },
+              }}
             >
               First and foremost, I love writing code. Ever since I was a little
               kid, software development has been my passion. As I went through
@@ -125,7 +124,7 @@ const About = () => {
             </a>
           </div>
         </div>
-      </motion.section>
+      </section>
     </>
   );
 };

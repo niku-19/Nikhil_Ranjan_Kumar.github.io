@@ -32,22 +32,7 @@ const Contact = () => {
 
   return (
     <>
-      <motion.section
-        initial={{
-          opacity: 0,
-          y: -100,
-          scale: 0.5,
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          transition: {
-            duration: 1,
-          },
-        }}
-        id="contact"
-      >
+      <section id="contact">
         <h5>Get In Touch</h5>
         <h1>Contact Me</h1>
         <div className="container contact__container">
@@ -194,7 +179,7 @@ const Contact = () => {
             <button className="btn btn-primary">Send Message</button>
           </form>
         </div>
-      </motion.section>
+      </section>
     </>
   );
 };

@@ -10,16 +10,16 @@ const ProjectCard = () => {
           <motion.div
             initial={{
               opacity: 0,
-              y: -200,
-              scale: 0.5,
+              y: -300,
+              scale: 0.1,
             }}
             whileInView={{
               opacity: 1,
               y: 0,
               scale: 1,
               transition: {
-                duration: 1,
-                delay: datas.delay,
+                duration: 1.5,
+                delay : datas.id * 0.2,
               },
             }}
             viewport={{once: true}}
